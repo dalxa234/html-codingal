@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>javascript Palindrome checking function</h2>
+    <script>
+        function Palindrome(text){
+            var input = text.replace(/[^A-Z0-9]/ig,"").tolowercase();
+            var reversedinput = input.split("").reverse().join("")
+            if (input === reversedinput){
+                document.write("<div>" + text + "is a palindrome <div>")
+            }
+            else{
+                document.write("<div>" + text + "is not a palindrome <div>")
+            }
+        }
+        Palindrome("madam")
+    </script>
+</body>
+</html>
